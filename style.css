@@ -21,19 +21,12 @@ html {
   padding: 0;
 }
 
-#root1--Denis {
-  width: 100%;
-  background-color: #ffff;
-}
-
 .header {
-  width: 62%;
-  height: 12.6vh;
+  height: 80px;
+  width: 940px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  border-bottom: 1.5px solid #828282;
-  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .navbar {
@@ -56,8 +49,13 @@ html {
   color: #070707;
 }
 
+#root1--Denis {
+  width: 100%;
+  background-color: #ffff;
+}
+
 .heading {
-  width: 62%;
+  width: 940px;
   margin: 0 auto;
   display: flex;
 }
@@ -81,13 +79,17 @@ h1 {
 
 .background--photo {
   padding-top: 2.65%;
-  width: 62%;
+  width: 940px;
   margin: 0 auto;
 }
 .background--photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.background--miniphoto {
+  display: none;
 }
 
 .root2--about {
@@ -111,7 +113,7 @@ h1 {
   padding-top: 23px;
   /*  1.6%; */
   margin: 0 auto;
-  max-width: 33.5%;
+  width: 485px;
   font-family: Gilroy-Medium;
   font-size: 18px;
   line-height: 22px;
@@ -144,7 +146,7 @@ h1 {
 
 .programs--grid {
   padding-top: 5.9%;
-  width: 62%;
+  width: 940px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -209,7 +211,7 @@ h1 {
   margin-top: 7.4%;
   width: 100%;
   background-color: #F6F6F6;
-  min-height: 2253px;
+  min-height: 50%;
 }
 
 .h2--portfolio {
@@ -223,7 +225,7 @@ h1 {
 
 .portfolio--levis {
   padding-top: 3.6%;
-  width: 62%;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -245,7 +247,7 @@ h1 {
 
 .portfolio--reebok {
   padding-top: 6.8%;
-  width: 62%;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -267,7 +269,7 @@ h1 {
 
 .portfolio--Braun {
   padding-top: 6.8%;
-  width: 62%;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -279,10 +281,320 @@ h1 {
 
 .h3--braun {
   padding-top: 2.3%;
+  padding-bottom: 6.5%;
   font-family: Gilroy-Medium;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   text-decoration-line: underline;
   color: #070707;
+}
+
+.root5--contactas {
+  min-height: 622px;
+}
+
+.h2--contacts {
+  padding-top: 7%;
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+}
+
+.h3--3 {
+  padding-top: 1.7%;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+}
+
+.button {
+  padding-top: 4.2%;
+  width: 180px;
+  height: 42px;
+  margin: 0 auto;
+}
+.button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #070707;
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: Gilroy-Bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: .4s ease;
+}
+.button a:hover {
+  transform: scale(1.1);
+}
+
+.contacts--icons {
+  padding-top: 5.5%;
+  width: 345px;
+  /*23%;*/
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  object-fit: cover;
+  transition: all .5s ease;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
+
+.likeon {
+  padding-top: 2.5%;
+  padding-bottom: 5.5%;
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+@media screen and (max-width: 980px) {
+  .header {
+    height: 80px;
+    width: 920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 940px) {
+  .header {
+    width: 97%;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .background--photo {
+    width: 93%;
+  }
+
+  .portfolio--levis {
+    width: 100%;
+  }
+
+  .portfolio--reebok {
+    width: 100%;
+  }
+
+  .portfolio--Braun {
+    width: 100%;
+  }
+
+  .programs--grid {
+    padding-top: 5.9%;
+    width: 466px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 26.57%;
+    min-height: 610px;
+  }
+
+  .stars--1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 31%;
+  }
+}
+@media screen and (max-width: 940px) and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .h1 {
+    padding-top: 7%;
+    padding-left: 4%;
+  }
+
+  .h3 {
+    padding-top: 2%;
+    padding-left: 4%;
+  }
+
+  .background--photo {
+    padding-top: 6.65%;
+  }
+}
+@media screen and (max-width: 940px) and (max-width: 768px) and (max-width: 485px) {
+  .h1 {
+    padding-top: 15%;
+    padding-left: 7%;
+    font-family: Gilroy-Bold;
+    font-size: 47px;
+    line-height: 59px;
+    color: #070707;
+  }
+
+  .h3 {
+    padding-top: 5%;
+    padding-left: 8%;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: #090909;
+  }
+
+  .background--photo {
+    display: none;
+  }
+
+  .background--miniphoto {
+    display: block;
+    margin: 0 auto;
+    width: 84%;
+    padding-top: 12%;
+  }
+
+  .mini {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .h2 {
+    padding-top: 22.5%;
+  }
+
+  .p--1 {
+    width: 316px;
+  }
+
+  .programs--grid {
+    padding-top: 5.9%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    min-height: 1002px;
+  }
+
+  .h2--2 {
+    padding-top: 16.5%;
+  }
+
+  .h3--2 {
+    padding-top: 10.8%;
+    text-align: center;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+  }
+
+  .programs--grid {
+    padding-top: 21.9%;
+  }
+
+  .h4--1 {
+    padding-top: 7%;
+  }
+
+  .stars {
+    width: 166px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+  }
+
+  .adobe-illustrator {
+    padding-top: 22%;
+  }
+
+  .abode-after-effects {
+    padding-top: 22%;
+  }
+
+  .figma {
+    padding-top: 22%;
+  }
+
+  .stars--1 {
+    width: 166px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+  }
+
+  .root4--portfolio {
+    min-height: 1118px;
+  }
+
+  .h2--portfolio {
+    padding-top: 81px;
+  }
+
+  .portfolio--levis {
+    padding-top: 64px;
+  }
+
+  .h3--levis {
+    padding-top: 33px;
+  }
+
+  .portfolio--reebok {
+    padding-top: 77px;
+  }
+
+  .h3--reebor {
+    padding-top: 33px;
+  }
+
+  .portfolio--Braun {
+    padding-top: 77px;
+  }
+
+  .h3--braun {
+    padding-top: 33px;
+    padding-bottom: 87px;
+  }
+
+  .h2--contacts {
+    padding-top: 82px;
+  }
+
+  .h3--3 {
+    padding-top: 27px;
+  }
+
+  .button {
+    width: 185px;
+    padding-top: 39px;
+  }
+
+  .contacts--icons {
+    padding-top: 48px;
+  }
+
+  .likeon {
+    padding-top: 49px;
+  }
+
+  .root5--contactas {
+    min-height: 585px;
+  }
 }
