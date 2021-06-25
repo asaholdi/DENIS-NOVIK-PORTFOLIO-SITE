@@ -22,6 +22,50 @@ html {
 }
 
 .header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  transition: all .7s;
+}
+
+.header--fixed {
+  z-index: 1000;
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  box-shadow: 0px -20px 26px #070707;
+}
+
+.header-show {
+  top: 0;
+}
+
+/*
+.header_fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    animation-name: showheader;
+    animation-duration: .5s;
+    box-shadow: 0px -20px 26px #070707;
+}
+
+@keyframes showheader {
+    0% {
+        opacity: 0;
+        top: -80px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+*/
+.header_wrapper {
   height: 80px;
   width: 940px;
   margin: 0 auto;
@@ -32,12 +76,14 @@ html {
 .navbar {
   width: 100%;
 }
-.navbar ul {
+
+.ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-.navbar a {
+
+.nav_link {
   text-decoration: none;
   font-family: Gilroy-Bold;
   font-size: 18px;
@@ -45,11 +91,11 @@ html {
   color: #828282;
   transition: all .7s ease;
 }
-.navbar a:hover {
+.nav_link:hover {
   color: #070707;
 }
 
-#root1--Denis {
+.root1--Denis {
   width: 100%;
   background-color: #ffff;
 }
@@ -58,6 +104,7 @@ html {
   width: 940px;
   margin: 0 auto;
   display: flex;
+  align-items: flex-end;
 }
 
 h1 {
@@ -74,7 +121,7 @@ h1 {
   line-height: 22px;
   color: #070707;
   padding-left: 31.6%;
-  padding-top: 10%;
+  padding-bottom: 1%;
 }
 
 .background--photo {
@@ -367,7 +414,7 @@ h1 {
 }
 
 @media screen and (max-width: 980px) {
-  .header {
+  .header_wrapper {
     height: 80px;
     width: 920px;
     margin: 0 auto;
@@ -376,12 +423,17 @@ h1 {
   }
 }
 @media screen and (max-width: 940px) {
-  .header {
+  .header_wrapper {
     width: 97%;
   }
 
   .heading {
     width: 100%;
+    align-items: flex-end;
+  }
+
+  .h1 {
+    padding-left: 3%;
   }
 
   .background--photo {
@@ -596,5 +648,10 @@ h1 {
 
   .root5--contactas {
     min-height: 585px;
+  }
+}
+@media screen and (max-width: 940px) and (max-width: 768px) and (max-width: 485px) and (max-width: 320px) {
+  .contacts--icons {
+    width: 300px;
   }
 }
